@@ -1,0 +1,516 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    justify-content: center;
+    max-width: 100vh;
+    margin: auto;
+    background-color:#FEFDF9;
+}
+
+header {
+    display: flex;
+}
+
+.topnav {
+    font-family: 'Inter';
+    font-weight: 200;
+    display: flex;
+    margin-left: auto;
+    padding: 4vh;
+    padding-right: 0;
+}
+
+a {
+    margin: 1.4vh;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    color: #E8AD52;
+    cursor: pointer;
+}
+
+.logoimg {
+    object-fit: contain;
+    width: max(7vh, 50px);
+}
+
+.main-img {
+    aspect-ratio: 7 / 3;
+    object-fit: cover;
+    width: max(65vh, 400px);
+    opacity: 0.9;
+}
+
+.main-img-mobile {
+    display: none;
+}
+
+h1 {
+    max-width: 30vh;
+    font-weight: 900;
+    line-height: 5vh;
+    font-size: 5vh;
+    margin: 3vh;
+    margin-left: 0;
+}
+
+h2 {
+
+    border: solid 5px #E6857E;
+    background-color: #E6857E;
+    margin-right: 16vh;
+    line-height: 2rem;
+    color: #FEFDF9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+}
+
+h2:hover {
+    border: solid 5px #00001A;
+    background-color: #00001A;
+    cursor: pointer;
+}
+
+h3 {
+    color: #E8AD52;
+    font-size: 2.3rem;
+    margin: 1vh 1vh;
+}
+
+h4 {
+    margin-bottom: 0;
+    margin-left: 1vh;
+    font-size: 1.1rem;
+}
+
+h4:hover {
+    color: #E8AD52;
+    cursor: pointer;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid: inherit;
+}
+
+.focus {
+    display: flex;
+}
+
+.article-text {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 45vh;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #00001A;
+}
+
+p {
+    margin-left: 1vh;
+    margin-right: 3vh;
+    font-weight: 100;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p2 {
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    font-weight: 100;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-list {
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vh;
+    background-color: #00001A;
+    color: #FEFDF9;
+    justify-content: space-between;
+}
+
+.bar {
+border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.footer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumbnail {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    width: max(10vh, 30px);
+    opacity: 0.9;
+    max-height: 15vh;
+}
+
+h5 {
+    font-size: 2rem;
+    opacity: 0.2;
+    margin: auto 0;
+    margin-top: 0;
+}
+
+h6 {
+    
+    font-weight: 800;
+    font-size: 1rem;
+    margin: auto 0;
+}
+
+h6:hover {
+    color: #E6857E;
+    cursor: pointer;
+}
+
+
+.footeritem {
+    display: flex;
+    max-width: 33vh;
+}
+
+.thumbtext {
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3vh;
+    margin-left: 2vh;
+}
+
+p3 {
+    max-width: 19vh;
+    margin-right: 3vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    font-weight: 100;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.darken {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    body {
+        max-width: 80vh;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    
+    header {
+        padding: 3vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .main-article {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .focus {
+        display: flex;
+        flex-direction: column;
+        max-width: 50vh;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    .main-img-mobile {
+        display: block;
+        object-fit: cover;
+        width: 43vh;
+        opacity: 0.9;
+    }
+
+    .article-list {
+        display: flex;
+        margin: 1.5rem;
+    }
+  
+    .logoimg {
+        object-fit: contain;
+        width: max(1vh, 50px);
+    }
+
+    .article-text {
+        flex-direction: column;
+        max-width: 41vh;
+    }
+
+    h1 {
+        max-width: 54vh;
+        margin: 2.5vh 0 1vh;
+    }
+
+    p2 {
+        font-size: 1rem;
+        margin-right: 6vh;
+        font-weight: 300;
+        line-height: 1.7rem;
+    }
+
+    h2 {
+        margin-right: 23vh;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin-top: 3vh;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+        line-height: 3vh;
+    }
+
+    .bar {
+        margin: 0 1vh;
+    }
+
+    .footer {
+        margin-top: 3vh;
+    }
+
+    .footeritem {
+        display: flex;
+        margin: 2vh 3vh;
+        max-width: 43vh;
+    }
+
+    h5 {
+        font-size: 2.2rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p3 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        max-width: 24vh;
+        line-height: 2.5vh;
+    }
+
+    .thumbnail {
+        aspect-ratio: 8 / 10;
+    object-fit: cover;
+    width: max(13vh, 30px);
+    opacity: 0.9;
+    max-height: 19vh;
+    }
+
+    .barblack {
+        display: block;
+        margin: 2vh 3vh 1vh;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        }
+
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  
+  z-index: 2;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 2;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+    position: fixed;
+    right: -146px;
+    /* margin-right: -460px; */
+    height: 100vh;
+    width: 325px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* transform-origin: 794px; */
+    transform: translate(100%,0);
+    transition: transform 0.5s
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+}
+
+
+.darken {
+    position: fixed;
+    size: fill;
+    display: none;
+    height: 100%;
+    background-color: #00001A;
+    opacity: 60%;
+    height: 235vh;
+    width: 176vh;
+    z-index: 1;
+}
